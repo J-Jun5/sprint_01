@@ -3,7 +3,16 @@ import logoImg from "../images/logo.svg";
 import profileImge from "../images/profile.svg";
 import './Header.css';
 
-const Header = () => {
+function Header () {
+
+  const loginBtnTap = () => {
+    <button className="loginBtn">로그인</button>
+  }
+
+  const profileTap = () => {
+    <img src={profileImge} alt="프로필" className="profileImg"/>
+  }
+
   return (
     <header className="headerContain">
       <img src={logoImg} alt="판다마켓" className="logoImg"/>
